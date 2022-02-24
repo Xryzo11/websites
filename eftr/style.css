@@ -1,0 +1,202 @@
+html{
+    color:#959494;
+}
+body{
+    background-image:url('dg.jpg');
+}
+.fs{
+    width:1410px;
+    box-shadow:5px 5px #111;
+    background-color:#222;
+    border-color:#000;
+}
+.budgetDiv{
+    background-color:#222;
+    width:90px;
+    height:255px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+.weaponDiv{
+    background-color:#222;
+    width:210px;
+    height:255px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+.gearDiv{
+    background-color:#222;
+    width:150px;
+    height:255px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+.armorDiv{
+    background-color:#222;
+    width:160px;
+    height:255px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+.throwableDiv{
+    background-color:#222;
+    width:180px;
+    height:255px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+.sourceDiv{
+    background-color:#222;
+    width:150px;
+    height:255px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+.containerDiv{
+    background-color:#222;
+    width:160px;
+    height:255px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+.mapDiv{
+    background-color:#222;
+    width:130px;
+    height:255px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+.timeDiv{
+    background-color:#222;
+    width:90px;
+    height:255px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+#budgetOutput{
+    background-color:#222;
+    width:90px;
+    height:30px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+#weaponOutput{
+    background-color:#222;
+    width:210px;
+    height:30px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+#gearOutput{
+    background-color:#222;
+    width:150px;
+    height:30px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+#armorOutput{
+    background-color:#222;
+    width:160px;
+    height:30px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+#throwableOutput{
+    background-color:#222;
+    width:180px;
+    height:30px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+#sourceOutput{
+    background-color:#222;
+    width:150px;
+    height:30px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+#containerOutput{
+    background-color:#222;
+    width:160px;
+    height:30px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+#mapOutput{
+    background-color:#222;
+    width:130px;
+    height:30px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+#timeOutput{
+    background-color:#222;
+    width:90px;
+    height:30px;
+    padding:5px;
+    float:left;
+    box-shadow:5px 5px #111;
+    background-image:url('bg.png');
+}
+#button{
+    background-color:#f00;
+    width:80px;
+    height:20px;
+    padding:3px;
+    margin-left:3px;
+    float:left;
+    color:#fff;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-shadow:5px 5px #111;
+}
+#checkall{
+    color:#fff;
+    text-shadow:5px 5px #111;
+}
+#instructions{
+    background-image:url('bg.png');
+    width:100%;
+    height:100%;
+}
+#note{
+    color:#f00;
+}

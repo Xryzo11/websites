@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Escape From Tarkov Gear Randomizer</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="randomizer.js"></script>
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+    <body>
+        <form>
+            <fieldset class="fs">
+                <legend>Gear Randomizer</legend>
+                <div class="budgetDiv">
+                    <label>Budget</label>
+                    <br><br><input type="checkbox" id="bAny" name="checkall">Any
+                    <br><input type="checkbox" id="b20" name="checkall">20k
+                    <br><input type="checkbox" id="b50" name="checkall">50k
+                    <br><input type="checkbox" id="b75" name="checkall">75k
+                    <br><input type="checkbox" id="b100" name="checkall">100k
+                    <br><input type="checkbox" id="b150" name="checkall">150k
+                    <br><input type="checkbox" id="b200" name="checkall">200k
+                    <br><input type="checkbox" id="b200p" name="checkall">200k+
+                </div>
+                <div class="weaponDiv">
+                    <label>Weapon Type</label>
+                    <br><br><input type="checkbox" id="wAny" name="checkall">Any
+                    <br><input type="checkbox" id="wAR" name="checkall">Assault Rifles
+                    <br><input type="checkbox" id="wAC" name="checkall">Assault Carbines
+                    <br><input type="checkbox" id="wLMG" name="checkall">Light Machine Guns
+                    <br><input type="checkbox" id="wSMG" name="checkall">Submachine Guns
+                    <br><input type="checkbox" id="wS" name="checkall">Shotguns
+                    <br><input type="checkbox" id="wDMR" name="checkall">Designated Marksman Rifles
+                    <br><input type="checkbox" id="wSR" name="checkall">Sniper Rifles
+                    <br><input type="checkbox" id="wP" name="checkall">Pistols
+                    <br><input type="checkbox" id="wM" name="checkall">Melee
+                    <br><input type="checkbox" id="wSp" name="checkall">Special
+                </div>
+                <div class="gearDiv">
+                    <label>Gear Type</label>
+                    <br><br><input type="checkbox" id="gAny" name="checkall">Any
+                    <br><input type="checkbox" id="gPMC" name="checkall">'PMC' like
+                    <br><input type="checkbox" id="gS" name="checkall">'Scav' like
+                    <br><input type="checkbox" id="gBG" name="checkall">'Boss/Guard' like
+                    <br><input type="checkbox" id="gRR" name="checkall">'Rogue/Raider' like
+                    <br><input type="checkbox" id="gC" name="checkall">Cache loot
+                </div>
+                <div class="armorDiv">
+                    <label>Armor Type</label>
+                    <br><br><input type="checkbox" id="aAnyN" name="checkall">Any (including none)
+                    <br><input type="checkbox" id="aAny" name="checkall">Any
+                    <br><input type="checkbox" id="aN" name="checkall">None
+                    <br><input type="checkbox" id="aBA" name="checkall">Body Armor
+                    <br><input type="checkbox" id="aAR" name="checkall">Armored Rig
+                </div>
+                <div class="throwableDiv">
+                    <label>Throwable Weapons</label>
+                    <br><br><input type="checkbox" id="tAnyN" name="checkall">Any (including none)
+                    <br><input type="checkbox" id="tAny" name="checkall">Any
+                    <br><input type="checkbox" id="tN" name="checkall">None
+                    <br><input type="checkbox" id="tF" name="checkall">Fragmentation Grenades
+                    <br><input type="checkbox" id="tSm" name="checkall">Smoke Grenades
+                    <br><input type="checkbox" id="tSt" name="checkall">Stun Grenades
+                </div>
+                <div class="sourceDiv">
+                    <label>Item Source</label>
+                    <br><br><input type="checkbox" id="sAny" name="checkall">Any
+                    <br><input type="checkbox" id="sT" name="checkall">Traders only
+                    <br><input type="checkbox" id="sFM" name="checkall">Flea Makret only
+                    <br><input type="checkbox" id="sS" name="checkall">Stash only
+                </div>
+                <div class="containerDiv">
+                    <label>Secure Container</label>
+                    <br><br><input type="checkbox" id="cAny" name="checkall">Any
+                    <br><input type="checkbox" id="cN" name="checkall">None
+                    <br><input type="checkbox" id="cSO" name="checkall">Smallest Owned
+                    <br><input type="checkbox" id="cBO" name="checkall">Biggest Owned
+                </div>
+                <div class="mapDiv">
+                    <label>Map</label>
+                    <br><br><input type="checkbox" id="mAny" name="checkall">Any
+                    <br><input type="checkbox" id="mLa" name="checkall">The Lab
+                    <br><input type="checkbox" id="mI" name="checkall">Interchange
+                    <br><input type="checkbox" id="mC" name="checkall">Customs
+                    <br><input type="checkbox" id="mF" name="checkall">Factory
+                    <br><input type="checkbox" id="mW" name="checkall">Woods
+                    <br><input type="checkbox" id="mR" name="checkall">Reserve
+                    <br><input type="checkbox" id="mLi" name="checkall">Lighthouse
+                    <br><input type="checkbox" id="mS" name="checkall">Shoreline
+                </div>
+                <div class="timeDiv">
+                    <label>Game Time</label>
+                    <br><br><input type="checkbox" id="tiAny" name="checkall">Any time
+                    <br><input type="checkbox" id="tiD" name="checkall">Daytime
+                    <br><input type="checkbox" id="tiN" name="checkall">Nighttime
+                </div>
+                <div id="budgetOutput"></div>
+                <div id="weaponOutput"></div>
+                <div id="gearOutput"></div>
+                <div id="armorOutput"></div>
+                <div id="throwableOutput"></div>
+                <div id="sourceOutput"></div>
+                <div id="containerOutput"></div>
+                <div id="mapOutput"></div>
+                <div id="timeOutput"></div>
+            </fieldset>
+            <br><div onclick="random()" id="button">Randomize!</div>
+            <input type="checkbox" id="checkall" onclick="toggle(this)"><span id="checkall">Check all checkboxes</span>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div id="instructions">
+                <t><b>Instructions</b></t>
+                <br><br><br><t><b>How to use</b></t><br><t>This 'tool' can make your raids more unique by randomizing your gear and map while also adding a little bit of a challenge!</t>
+                <br><t>Check the checkboxes which you want to roll a value from and press the 'Randomize!' button. The random values should appear below the categories.</t>
+                <br><br><br><t><b>I rolled 'x' but i don't know what that means!</b></t>
+                <br><t>This part will be a bit long as I will explain most of the stuff here...</t>
+                <br><br><t>Budget: sets your budget on your loadout you can take with you on a raid.</t>
+                <br><t>Any - you can spend whatever ammount of money you want,</t>
+                <br><t>20k-200k - you can spend a maximum of 'x' ammount of money,</t>
+                <br><t>200k+ - you need to spend at least 200k on your gear</t>
+                <br><br><t>Weapon Type: you can only buy and take (you can still use a different one if found in raid!) weapons of 'x' type.</t>
+                <br><t>Any - you can take whatever weapon types with you,</t>
+                <br><t>Anything other than Special - you can only take the 'x' weapon type with you,</t>
+                <br><t>Special - you can only take 'special' weapons, ex.: FN40GL</t>
+                <br><br><t>Gear Type: specifies what type of gear you need to take on a raid with you</t>
+                <br><t>'PMC' like - you need to take the type of gear you would usually find on a PMC within that budget,</t>
+                <br><t>'Scav' like - you can only take the type of gear you would usually find on a Scav, ex.:Saiga-9, Tarzan rig, ScavBP...,</t>
+                <br><t>'Boss/Guard' like - you can only take gear that can be found on bosses or guards, if possible you should also mod them in a similiar way,</t>
+                <br><t>'Rogue/Raider' like - you can only take gear that can be found on Rouges or Raiders,</t>
+                <br><t>Cache loot - you can only take gear that can be found in ground and barrel caches</t>
+                <br><br><t>Armor type: sets the type of armor you need to take (does not specify helmets).</t>
+                <br><t>Any (including none) - you can take armor with you, but you don't have to,</t>
+                <br><t>Any - you need to take some kind of armor with you</t>
+                <br><t>None - you can't take any armor with you (you can still take helmets though!),</t>
+                <br><t>Body Armor - you need to take some kind of Body Armor with you. If you can't afford any, you can't take armor,</t>
+                <br><t>Armored Rig - you need to take some kind of Armored Rig with you. If you can't afford any, you can't take armor,</t>
+                <br><br><t>Throwable Weapons: specifies the grenades you need to take with you.</t>
+                <br><t>Any (including none) - you can, but you don't have to take any type of grenades,</t>
+                <br><t>Any - you need to take some kind of grenade with you,</t>
+                <br><t>None - you can't take any grenades with you,</t>
+                <br><t>Any other option - specifies the type of grenade you need to take with you</t>
+                <br><br><t>Item source: you can only get your gear from 'x'.</t>
+                <br><t>Traders/Flea Market only - you can only buy items from 'x', you can't use any items you already have in your stash,</t>
+                <br><t>Stash only - you can only use items from your stash, if you're missing required items, you can buy them from wherever you want</t>
+                <br><br><t>Secure Container: depending on what you roll, you have use a specific Secure Container, or not use one at all</t>
+                <br><br><t>Map and Game Time: those are easy to understand I hope?</t>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <t><span id="note">Important note: if you know anything about programming, I would advise you not to look in the source code - especially the JavaScript part - as your eyes will most likely start bleeding.</span></t>
+            </div>
+        </form>
+    </body>
+</html>

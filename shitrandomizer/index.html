@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Shittiest randomizer ever made</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <form>
+        <fieldset style="width:800px">
+            <legend>Randomizer</legend>
+            <div class="p">
+                Participants
+                <br><input type="text" id="p" size="10"><input type="button" value="Add" onclick="pA();pCountF()">
+                <br><br><input type="button" value="Add common" onclick="pAc();pCountF()" ><input type="button" value="Pop" onclick="pR();pCountF()" style="width:52px;">
+                <br><input type="button" value="Console Info" onclick="pI()"><input type="button" value="Clear" onclick="pC();pCountF()" style="width:56px;">
+                <br>Participants: <span id="pCount">0</span>
+            </div>
+            <div class="c">
+                Characters
+                <br><input type="text" id="c" size="10"><input type="button" value="Add" onclick="cA();cCountF()">
+                <br><br><input type="button" value="Add common" onclick="cAc();cCountF()"><input type="button" value="Pop" onclick="cR();cCountF()" style="width:52px;">
+                <br><input type="button" value="Console Info" onclick="cI()"><input type="button" value="Clear" onclick="cC();cCountF()" style="width:56px;">
+                <br>Characters: <span id="cCount">0</span>
+            </div>
+            <div class="ar">
+                Age rating
+                <br><input type="checkbox" id="e" name="checkall">Everyone
+                <br><input type="checkbox" id="q" name="checkall">Questionable
+                <br><input type="checkbox" id="m" name="checkall">Mature
+            </div>
+            <div class="t">
+                Type
+                <br><input type="checkbox" id="pfp" name="checkall">Profile Picture
+                <br><input type="checkbox" id="wp" name="checkall">Both Wps
+                <br><input type="checkbox" id="wpL" name="checkall">Lock Wp
+                <br><input type="checkbox" id="wpH" name="checkall">Home Wp
+            </div>
+            <div class="r">
+                Ammount of rolls
+                <br><input type="number" id="r" style="width:50px;" min="1" value="1">
+            </div>
+        </fieldset>
+        <input type="button" onclick="random()" value="Randomize"><input type="checkbox" id="checkall" onclick="toggle(this)"><span id="checkall">Check all checkboxes</span><!--<input type="button" onclick="test()" value=" ">-->
+    </form>
+    <span id="oTxt">
+        <br><br><br>Output goes here:<br>
+        <div id="output"></div>
+    </span>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body{
+    /*color:#959494;*/
+    background-image:url('bg.png');
+    background-size:auto;
+    background-attachment: fixed;
+}
+.p{
+    float:left;
+    width:150px;
+    height:200px;
+    background-color:#222;
+    padding:5px;
+    color:#959494;
+}
+.c{
+    float:left;
+    width:150px;
+    height:200px;
+    background-color:#222;
+    padding:5px;
+    color:#959494;
+}
+.ar{
+    float:left;
+    width:150px;
+    height:200px;
+    background-color:#222;
+    padding:5px;
+    color:#959494;
+}
+.t{
+    float:left;
+    width:150px;
+    height:200px;
+    background-color:#222;
+    padding:5px;
+    color:#959494;
+}
+.r{
+    float:left;
+    width:150px;
+    height:200px;
+    background-color:#222;
+    padding:5px;
+    color:#959494;
+}
+.oTxt{
+    color:#222;
+}

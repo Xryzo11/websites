@@ -13,14 +13,14 @@
             <legend>Randomizer</legend>
             <div class="p">
                 Participants
-                <br><input type="text" id="p" size="10"><input type="button" value="Add" onclick="pA();pCountF()">
+                <br><input type="text" id="p" size="10" onfocus="this.value='';"><input type="button" value="Add" onclick="pA();pCountF();">
                 <br><br><input type="button" value="Add common" onclick="pAc();pCountF()" ><input type="button" value="Pop" onclick="pR();pCountF()" style="width:52px;">
                 <br><input type="button" value="Console Info" onclick="pI()"><input type="button" value="Clear" onclick="pC();pCountF()" style="width:56px;">
                 <br>Participants: <span id="pCount">0</span>
             </div>
             <div class="c">
                 Characters
-                <br><input type="text" id="c" size="10"><input type="button" value="Add" onclick="cA();cCountF()">
+                <br><input type="text" id="c" size="10" value="test" onfocus="this.value='';"><input type="button" value="Add" onclick="cA();cCountF();">
                 <br><br><input type="button" value="Add common" onclick="cAc();cCountF()"><input type="button" value="Pop" onclick="cR();cCountF()" style="width:52px;">
                 <br><input type="button" value="Console Info" onclick="cI()"><input type="button" value="Clear" onclick="cC();cCountF()" style="width:56px;">
                 <br>Characters: <span id="cCount">0</span>

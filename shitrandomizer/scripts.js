@@ -31,7 +31,7 @@ function pR() {
 }
 //adding common participants
 function pAc() {
-    participants.push("Hubert", "Robert", "Adam", "Bartek", "Oktawian", "Kuba", "Sergiusz", "Konrad", "Szymon");
+    participants.push("Hubert", "Robert", "Adam", "Bartek", "Oktawian", "Kuba", "Sergiusz", "Konrad", "Szymon", "Kruk");
     console.log(participants);
 }
 //participants console log button
@@ -124,6 +124,13 @@ function random() {
         type.push('Both Wps');
     };
 
+    var rCheck=document.getElementById('r').valueAsNumber;
+    console.log(r.value);
+    if (rCheck==0||rCheck=='') {
+        output1="Ammount of rolls was not specified";
+        console.log(output1);
+        document.getElementById('output').innerHTML=output1;
+    };
     for (let r=document.getElementById('r').valueAsNumber; r>=1;) {
 
     //arating math

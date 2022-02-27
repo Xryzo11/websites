@@ -2,7 +2,7 @@ body{
     /*color:#959494;*/
     background-image:url('bg.png');
     background-size:auto;
-    background-attachment: fixed;
+    background-attachment:fixed;
 }
 .p{
     float:left;
@@ -46,4 +46,12 @@ body{
 }
 .oTxt{
     color:#222;
+}
+.secret{
+    width:1px;
+    height:20px;
+    /*background-color:black;*/
+    position:absolute;
+    left:837px;
+    top:77px;
 }
